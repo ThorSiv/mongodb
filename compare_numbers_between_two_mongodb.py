@@ -4,7 +4,7 @@ from pymongo import MongoClient
 i = 0
 while i < 1:
         #connect to two mongodb instances
-        conn1 = MongoClient('mongodb://122.226.73.41:61111')
+        conn1 = MongoClient('mongodb://127.0.0.1:27017')
         conn2 = MongoClient('mongodb://127.0.0.1:27917')
         #get datalist from source mongodb
         dblist = conn1.list_database_names()
